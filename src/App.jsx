@@ -12,12 +12,6 @@ function App() {
           <Route
             path="/"
             element={
-              <Home apiUrl="https://web-weekly-friends-generator.onrender.com" />
-            }
-          />
-          <Route
-            path="/admin"
-            element={
               <WeeklyPairing apiUrl="https://web-weekly-friends-generator.onrender.com" />
             }
           />
