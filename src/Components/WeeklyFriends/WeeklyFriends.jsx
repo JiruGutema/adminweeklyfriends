@@ -80,6 +80,7 @@ const WeeklyPairing = ({ apiUrl }) => {
           </li>
         ))}
       </ul>
+      <button onClick={resetPairs}>Reset Pairs</button>
       <h2>Manage Users</h2>
       <input
         type="text"
@@ -89,6 +90,7 @@ const WeeklyPairing = ({ apiUrl }) => {
       />
       <br />
       <button onClick={addUser}>Add User</button>
+
       <ul>
         {users.map((user, index) => (
           <li key={index}>
@@ -96,7 +98,6 @@ const WeeklyPairing = ({ apiUrl }) => {
           </li>
         ))}
       </ul>
-      <button onClick={resetPairs}>Reset Pairs</button>
     </div>
   );
 };
